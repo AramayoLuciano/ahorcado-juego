@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #f3f5fc;
+}
+header img{
+    margin-left: 4.5rem;
+    margin-top: 1.8rem;
+}
+
+/* Seccion pagina-principal */
+
+.botones-principales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 68vh;
+}
+.btn-iniciar{
+    font-size: 17px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: #f3f5fc;
+    padding: 2.3rem;
+    width: 14rem;
+    margin-bottom: 1.5rem;
+    transition: 1s all;
+    cursor: pointer;
+}
+.btn-iniciar:hover{
+    transform: scale(1.1);
+}
+.btn-nueva-palabra{
+    border-radius: 22px;
+    background-color: inherit;
+    color: #0A3871 ;
+    padding: 1rem;
+    width: 13rem;
+    cursor: pointer;
+}
+
+/* */
+
+/* Seccion juego-iniciado */
+
+.hombre-ahorcado{
+    width: 100vw;
+    text-align: center;
+    margin-top: 2rem;
+}
+#hombre{ 
+    /* Hacemos la imagen responsive */
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 16rem;
+    height: 16rem;
+}
+
+.adivinado{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.letra{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.adivinada{
+    width: 4.5rem;
+    height: 4rem;
+    color: #002462;
+    border-bottom: solid 1px #002462;
+    margin-left: 0.4rem;
+    line-height: 4.5rem;
+}
+
+.errado{
+    text-align: center;
+    margin-top: 1rem;
+    color: #242d34;
+}
+
+.errada{
+    margin-left: 0.5rem;
+}
+
+[type="button"]{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #0a3871;
+    cursor: pointer; /* Para que el cursos cambie a mano cuando lo apoyemos sobre los botones */
+    background-color: inherit;
+    color: #0a3871 ;
+    transition: 1s all;
+}
+[type="button"]:hover{
+    transform: scale(1.1);
+}
+
+.botones{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-azul{  
+    background-color: #0a3871;
+    color:#f3f5fc ;
+    margin-right: 1rem;
+
+}
+
+/* */
+
+.ocultar {
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.autor{
+    padding-top: 20px;
+    color: #0A3871;
+}
+.redes{
+    padding-top: 10px;
+    width: 300px;
+    height: 60px;
+    display: block;
+    margin: auto;
+}
+.redes .fa-brands{
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.redes .icono1:hover{
+    background: #3b5998;
+}
+.redes .icono2:hover{
+    background: #C13584;
+}
+.redes .icono3:hover{
+    background: #0A66C2;
+}
+.redes .icono4:hover{
+    background: #FF0000;
+}
+
+/* Algunos ajustes para mobil */
+
+@media screen and (max-width:480px){
+    .btn-azul{
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+}

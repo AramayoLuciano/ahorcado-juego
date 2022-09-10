@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 02 | Juego del ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d2411dc4d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png">
+    </header>
+    <main>    
+        <section class="pagina-principal">
+            <div class="botones-principales">
+                <button class="btn-iniciar" onclick="ocultarPaginaPrincipal()">Iniciar Juego</button>
+            </div>
+        </section>
+    
+        <section class="juego-iniciado ocultar">
+            <div class="hombre-ahorcado">
+                <img alt="hombre-ahorcado" id="hombre">
+            </div>
+            <div class="adivinado"></div>
+            <div class="errado"></div>
+            <div class="botones">
+                <input type="button" class="btn-azul" value="Nuevo Juego" onclick="nuevoJuego()">
+                <input type="button" value="Desistir" onclick="volverPaginaPrincipal()">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="autor">Created by Luciano Aramayo</h3>
+        <div class="redes">
+            <a href="https://www.facebook.com/lucianonicolas.aramayovaldiviezo/"><i class="fa-brands fa-facebook icono1"></i></a>
+            <a href="https://www.instagram.com/aramayiix/"><i class="fa-brands fa-instagram icono2"></i></a>
+            <a href="https://www.linkedin.com/in/luciano-nicolas-aramayo-valdiviezo-432255243/"><i class="fa-brands fa-linkedin icono3"></i></a>
+            <a href="https://youtube.com/channel/UCCLNk-Zrs049p8wqoM7YTGQ"><i class="fa-brands fa-square-youtube icono4"></i></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="botones.js"></script>
+</body>
+
+</html>
